@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"content="width=devise-width,initial-scale=1.0">
+        <title>BeautySalonMelissa</title>
+        <link rel="stylesheet" href="estilos.css">
+        <head>
+            <body>
+                <header>
+                    <h1>BeautySalonMelissa</h1>
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">incio</a></li>
+                            <li><a href="registro.html">registro</a></li>
+                            <li><a href="servicios.html">servicios</a></li>
+                            <li><a href="agenda.html">agenda</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                <section id="incio">
+                    <h2>BienvenidosaBeautySalonMelissa</h2>
+                    <img src="img/portada.jpg.jpeg"alt="portada">
+                    <p>Tubellezaesnuestroarte</p>
+                </section> 
+                <section id="servicios">
+                    <h2>nuestrosservicios</h2>
+                    <div class="servicio">
+                        <img src="img/maquillaje.jpg.jpeg" alt="maquillaje">
+                        <h3>maquillajes</h3>
+                        <p>110.000</p>
+                        <button onclick="agendar(maquillaje,110.000)">
+                        </button>
+                    </div>
+                    <div class="servicio">
+                        <img src="img/peluqueria.jpg.jpeg"alt="peluqueria">
+                        <h3>peluqueria</h3>
+                        <p>28.000</p>
+                        <button onclick="agendar(peluqueria,28.000)">
+                        </button>
+                        </div>
+                <div class="servicio">
+                        <img src="img/pestañas.jpg.jpeg"alt="pestañas">
+                        <h3>pestañas</h3>
+                        <p>150.000</p>
+                        <button onclick="agendar(pestañas,150.000)">
+                        </button>
+                        </div>
+                         <div class="servicio">
+                        <img src="img/uñas.jpg.jpeg"alt="uñas">
+                        <h3>uñas</h3>
+                        <p>120.000</p>
+                        <button onclick="agendar(unas,120.000)">
+                        </button>
+                        </div>
+                </section>
+                <section id="registro">
+                   <h2>registro usuarios</h2>
+                   <form>
+                    <input type="text"placeholder="nombre"required>
+                    <input type="text"placeholder="apellido"required>
+                    <input type="email"placeholder="correo electronico"required>
+                    <input type="tel"placeholder="telefono"required>
+                    <button type="submit">
+                   </button>
+                   </form>
+                </section>
+                <section id="pagos">
+                    <h2>pagos</h2>
+                    <ul id="lista pagos">
+                    </ul>
+                    <h3 id="total"></h3>
+                </section>
+                <footer>
+                    <p>BeautySalonMelissa</p>
+                </footer>
+                <script src="script.js"></script>
+            </body>
+            </html>
