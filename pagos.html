@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasarela de Pago - Beauty Salon Melissa</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <header>
+        <h1>Beauty Salon Melissa</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="registro.html">Registro</a></li>
+                <li><a href="pagos.html">Ver Pagos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Esta sección es el "tablero" que el JavaScript buscará para meter los datos -->
+        <section id="pagos">
+            <h2>Resumen de tu Pedido</h2>
+            
+            <!-- Aquí el JavaScript meterá los servicios automáticamente -->
+            <ul id="lista-pagos"></ul>
+            
+            <!-- Aquí el JavaScript cambiará el texto por el total real -->
+            <h3 id="total">Total: $0</h3>
+            
+            <!-- Aquí abajo el JavaScript creará e inyectará el botón verde de Mercado Pago -->
+        </section>
+    </main>
+
+    <footer>
+        <p>BeautySalonMelissa</p>
+    </footer>
+
+    <!-- ESTA LÍNEA ES LA MÁS IMPORTANTE: Llama al pintor (JavaScript) para que llene este HTML -->
+    <script src="scrip.js"></script>
+</body>
+</html>

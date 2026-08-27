@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda tu Cita - Beauty Salon Melissa</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<header>
+        <h1>BeautySalonMelissa</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="registro.html">Registro</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="agenda.html">Agenda</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Agenda tu Cita</h2>
+        <p>Reserva tu espacio de forma rápida y asegura tu atención personalizada.</p>
+
+        <!-- Formulario de Agendamiento -->
+        <section class="formulario-agenda">
+            <form action="#" method="POST">
+                
+                <div class="campo">
+                    <label for="nombre">Nombre Completo:</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Escribe tu nombre">
+                </div>
+
+                <div class="campo">
+                    <label for="telefono">Teléfono / WhatsApp:</label>
+                    <input type="tel" id="telefono" name="telefono" required placeholder="Ej: +57 300 123 4567">
+                </div>
+
+                <div class="campo">
+                    <label for="servicio">Selecciona el Servicio:</label>
+                    <select id="servicio" name="servicio" required>
+                        <option value="" disabled selected>-- Elige una opción --</option>
+                        <option value="corte">Corte de Cabello</option>
+                        <option value="maquillaje">Maquillaje Profesional</option>
+                        <option value="pestanas">Extensiones de Pestañas</option>
+                        <option value="unas">Manicura y Uñas</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="fecha">Selecciona la Fecha:</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                </div>
+
+                <div class="campo">
+                    <label for="hora">Selecciona la Hora:</label>
+                    <input type="time" id="hora" name="hora" required>
+                </div>
+
+                <button type="submit" class="btn-enviar">Confirmar Reservación</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Beauty Salon Melissa. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
