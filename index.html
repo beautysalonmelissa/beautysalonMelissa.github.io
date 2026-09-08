@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"content="width=device-width,initial-scale=1.0">
+        <title>BeautySalonMelissa</title>
+        <link rel="stylesheet" href="estilos.css">
+        <head>
+            <body>
+                <header>
+                    <h1>BeautySalonMelissa</h1>
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">incio</a></li>
+                            <li><a href="registro.html">registro</a></li>
+                            <li><a href="servicios.html">servicios</a></li>
+                            <li><a href="agenda.html">agenda</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                <section id="inicio">
+                    <h2>BienvenidosaBeautySalonMelissa</h2>
+                    <img src="portada.jpeg"alt="portada">
+                    <p>Tubellezaesnuestroarte</p>
+                </section> 
+                <section id="servicios">
+                    <h2>nuestrosservicios</h2>
+                    <div class="servicio">
+                        <img src="maquillaje.jpeg" alt="maquillaje">
+                        <h3>maquillajes</h3>
+                        <p>110.000</p>
+                        <button onclick="agendar(maquillaje,110.000)">
+                        </button>
+                    </div>
+                    <div class="servicio">
+                        <img src="corte.jpeg"alt="corte">
+                        <h3>corte</h3>
+                        <p>28.000</p>
+                        <button onclick="agendar(corte,28.000)">
+                        </button>
+                        </div>
+                <div class="servicio">
+                        <img src="pestañas.jpeg"alt="pestañas">
+                        <h3>pestañas</h3>
+                        <p>150.000</p>
+                        <button onclick="agendar(pestañas,150.000)">
+                        </button>
+                        </div>
+                        <div class="servicio">
+                        <img src="uñas.jpeg"alt="uñas">
+                        <h3>uñas</h3>
+                        <p>120.000</p>
+                        <button onclick="agendar(unas,120.000)">
+                        </button>
+                        </div>
+                </section>
+                <section id="registro">
+                   <h2>registro usuarios</h2>
+                   <form>
+                    <input type="text"placeholder="nombre"required>
+                    <input type="text"placeholder="apellido"required>
+                    <input type="email"placeholder="correo electronico"required>
+                    <input type="tel"placeholder="telefono"required>
+                    <button type="submit"><registrarse</button>
+                   </form>
+                </section>
+                 <section id="pagos">
+                    <h2>pagos</h2>
+                    <!--aqui scrip.js metera la lista de lo que compro-->
+                    <ul id="lista-pagos"></ul>
+                    <!--el total va por fuera de la lista, suelto-->
+                        <h3 id="total"></h3>
+                    <!--CONTENEDOR OBLIGATORIO: Aui es donde scrip.js inyectara el boton verde-->
+                    <button type="button" id="btn-confirmar-pago"style="margin-top:15px; background-color: #28a745; color:white; padding:10px;border: none; border-radius: 5px; width: 100%; font-weight: bold; cursor: pointer;">
+                        confirmar y pagar
+                    </button>"
+                    <!--CAJA CONTENEDORA OBLIGATORIA: aqui es donde scrip.js metera el boton azul de wompi-->
+                    <div id="contenedor-wompi-real"style="margin-top:15px; width: 100%;"></div>
+                    <div id="mensaje-pago"style="margin-top:10px; font-weight:bold;"></div>
+                </section>
+                <footer>
+                    <p>BeautySalonMelissa</p>
+                </footer>
+                <script src="scrip.js"></script>
+            </body>
+            </html>
