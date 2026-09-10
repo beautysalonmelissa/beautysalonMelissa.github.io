@@ -69,3 +69,29 @@ footer{
     text-align:center;
     padding:15px;
 }
+/* Estilos aplicados directamente al botón dinámico que genera Wompi */
+#btn-pagos-wompi {
+    display: block;
+    width: 100%;
+    max-width: 350px;
+    margin: 20px auto;
+    padding: 14px 20px;
+    background-color: #00c3de !important; /* Azul oficial de Wompi */
+    color: #ffffff !important;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#btn-pagos-wompi:hover {
+    background-color: #00a0b8 !important; /* Azul más oscuro al pasar el cursor */
+    transform: translateY(-2px);
+}
+
+#btn-pagos-wompi:active {
+    transform: translateY(0);
+}
