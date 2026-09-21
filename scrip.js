@@ -109,7 +109,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // Función para simular o conectar la pasarela bancaria
-    function procesarTransaccionFinal() {
+    function procesarpagocarrito() {
         alert("Conectando de forma segura con la pasarela de pagos colombiana... Por favor espera.");
 
         // Limpiamos el carrito porque el pago ya se procesó
@@ -157,7 +157,7 @@ async function procesarPagoCarrito(sumaTotal) {
 }
 
 // 2. Función que renderiza el botón azul oficial de Wompi
-function renderizarBotonWompi(referencia, montoCentavos) {
+function renderizarBotonWompi(referencia, montocentavos) {
     // Apunta exactamente al div contenedor que pusimos en tu index.html/pagos.html
     const seccionWompi = document.getElementById('contenedor-Wompi-real'); 
     if (!seccionWompi) return;
