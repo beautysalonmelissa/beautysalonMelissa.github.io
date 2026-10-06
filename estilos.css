@@ -1,0 +1,143 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+body{
+    font-family:Arial, sans-serif;
+    background-color: antiquewhite;
+}
+header{
+    background-color: lavenderblush;
+    color:black;
+    text-align:center;
+    padding:20px;
+}
+nav ul{
+    list-style: none;
+}
+nav ul li {
+    display: inline-block;
+    margin: 15px;
+}
+nav ul li a{
+    color: black;
+    text-decoration: none;
+}
+section{
+    text-align:center;
+    padding:20px;
+}
+#inicioimg {
+    width:80%;
+    max-width:800px;
+}
+.producto {
+background:white;
+width:300px;
+margin:20px auto;
+padding:20px;
+border-radius:10px;
+box-shadow: 0  4px 10px rgba (0,0,0,0.1);
+text-align:center;
+}
+.productoimg {
+    width:100%;
+    height:200px;
+}
+form{
+    width:400px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+}
+form input {
+    margin:10px;
+    padding:10px;
+}
+form button {
+    padding:10px;
+    cursor:pointer;
+}
+#pagos{
+    text-align: center;
+    padding:20px;
+}
+footer{
+    background: floralwhite;
+    color:black;
+    text-align:center;
+    padding:15px;
+}
+/* Estilos aplicados directamente al botón dinámico que genera Wompi */
+#btn-pagos-wompi {
+    display: block;
+    width: 100%;
+    max-width: 350px;
+    margin: 20px auto;
+    padding: 14px 20px;
+    background-color: #00c3de !important; /* Azul oficial de Wompi */
+    color: #ffffff !important;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#btn-pagos-wompi:hover {
+    background-color: #00a0b8 !important; /* Azul más oscuro al pasar el cursor */
+    transform: translateY(-2px);
+}
+
+#btn-pagos-wompi:active {
+    transform: translateY(0);
+}
+/* --- ESTILOS PARA EL DESPLEGABLE DE SERVICIOS Y PRECIOS --- */
+
+/* El botón que el usuario presiona para abrir las opciones */
+.boton-desplegar {
+  background-color: #f5f5f5;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+/* La cajita que se abre con la lista de servicios internos */
+.lista-opciones {
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #fff;
+  max-height: 150px;
+  overflow-y: auto; /* Pon scroll si añades muchas opciones */
+  text-align: left;  /* Alinea el texto a la izquierda para que se vea ordenado */
+}
+
+/* Formato para cada fila de servicio (Nombre + Precio) */
+.opcion-servicio {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+/* Espacio entre el círculo de selección y el texto */
+.opcion-servicio input {
+  margin-right: 8px;
+}
+
+/* Hace que el precio resalte en negrita */
+.opcion-servicio .precio {
+  font-weight: bold;
+  color: #333;
+}
